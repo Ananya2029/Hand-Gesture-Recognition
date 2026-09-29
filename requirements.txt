@@ -1,0 +1,4 @@
+numpy
+opencv-python
+mediapipe>=0.10.14
+tensorflow>=2.16  # only for the custom-CNN app.py
