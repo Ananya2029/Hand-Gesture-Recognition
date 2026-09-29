@@ -1,4 +1,4 @@
-"""Webcam demo for the custom CNN trained in Untitled.ipynb.
+"""Webcam demo for the custom CNN trained in gesture_cnn_training.ipynb.
 
 Needs the trained model file `gesture_recognition_model.h5` in this folder
 (produced by the notebook; not included because of its size).
@@ -14,7 +14,7 @@ MODEL_PATH = Path(__file__).resolve().parent / "gesture_recognition_model.h5"
 if not MODEL_PATH.exists():
     raise SystemExit(
         f"Model not found at {MODEL_PATH}.\n"
-        "Train it with Untitled.ipynb, or run the MediaPipe version: python app2.py"
+        "Train it with gesture_cnn_training.ipynb, or run the MediaPipe version: python app2.py"
     )
 
 model = load_model(MODEL_PATH)
